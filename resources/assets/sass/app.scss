@@ -5,9 +5,52 @@
 @import "variables";
 
 @import "meetOur-team";
+@import "welcome_layout";
+
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+//include fontawesome 5.1
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/fa-solid';
+@import '~@fortawesome/fontawesome-free/scss/fa-brands';
+@import '~@fortawesome/fontawesome-free/scss/fa-regular';
+
 body {
   padding-top: 3.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover{
+    color:#FE5006 !important;
+    text-decoration: none !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 255);
+}
+
+.bg-dark {
+    background-color: #392d23 !important;
+}
+.bg-light-dark {
+    background-color: #aa8f76 !important;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+.jumbotron {
+  border-radius:0rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
 }

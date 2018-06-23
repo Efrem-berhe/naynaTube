@@ -2,14 +2,20 @@ EDUCATIONROHN READ ME FILE
 
 project set up
 
-1. laravel 5.5 as backend and Reactjs as front end
+1. laravel 5.5 as back-end and Reactjs as front-end
+using font-awesome version 5 (latest)
 
 entry file to ract component is main.js file
 
-- to compile sass file use : npm run dev, to watch ... npm run watch 
+- to compile sass file use : npm run dev, to watch ... npm run watch
 - to run laravel server use : npm artisan serve ... then page will be loaded on 127.0.0.1:8000
 
-happy coding 
+happy coding
+
+ucc.ulyssis
+
+username: educationrohn
+password: @Aqwzsx741
 
 database :
 

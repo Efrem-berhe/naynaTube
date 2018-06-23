@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel</title>
+        <title>educationrohn</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -15,47 +15,94 @@
         <!-- Styles -->
 
     </head>
-    <body>
+    <body class="pt-0">
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-     <a class="navbar-brand" href="#">E-ROHN</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
+    <div class="container d-flex align-items-center">
+        <img  class="m-auto" height="48" src="./img/logo1.png"/>
+        <div class="float-right">
+          <a href="/register" class="mr-2 nav-item" style="color:black"><i class="fas fa-user-plus mr-1"></i> Sign up</a>
+          <a href="/login" style="color:black"><i class="fas fa-sign-in-alt mr-1"></i> Sign in</a>
+        </div>
 
-     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-       <ul class="navbar-nav mr-auto">
-         {{-- <li class="nav-item active">
-           <a class="nav-link" href="#">About-Us <span class="sr-only">(current)</span></a>
-         </li> --}}
-         {{-- <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
-         </li> --}}
-         {{-- <li class="nav-item">
-           <a class="nav-link disabled" href="#">Disabled</a>
-         </li> --}}
-         {{-- <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-           <div class="dropdown-menu" aria-labelledby="dropdown01">
-             <a class="dropdown-item" href="#">Action</a>
-             <a class="dropdown-item" href="#">Another action</a>
-             <a class="dropdown-item" href="#">Something else here</a>
-           </div>
-         </li> --}}
-       </ul>
-       {{-- <form class="form-inline my-2 my-lg-0">
-         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-       </form> --}}
-     </div>
-   </nav>
+    </div>
+
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark" role="navigation">
+
+          <div class="container">
+             <ul class="nav navbar-nav mx-auto">
+
+               <li class="nav-item">
+                 <a class="nav-link text-uppercase" href="/home">Home</a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link text-uppercase" href="/over">Over</a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link text-uppercase" href="/lesson">Lesson</a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link text-uppercase" href="/event">Event</a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link text-uppercase" href="/blog">Blog</a>
+               </li>
+
+             </ul>
+
+        </div>
+
+    </nav>
 
         @yield('content')
-        <hr />
-  <footer class="container">
-    <p>&copy; Education-rohn 2017-2018</p>
+
+  <footer class="footer">
+  <div class="Fluid jumbotron bg-light-dark mb-0">
+    <div class="row">
+
+      <div class="col-md-4 text-center">
+        <img width="120" src="./img/kuleuven.png" />
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img width="120" src="./img/ablnbev.png" />
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img width="120" src="./img/telent.png" />
+      </div>
+
+    </div>
+  </div>
+
+  <div class="Fluid jumbotron bg-dark mb-0">
+
+    <div class="text-center">
+      <a class="p-2" href="/Over">Over</a>
+      <a class="p-2" href="/Vacatures">Vacatures</a>
+      <a class="p-2" href="/Privacy">Privacy</a>
+      <a class="p-2" href="/Cookies">Cookies</a>
+      <a class="p-2" href="/Gebruiksvoorwaarden">Gebruiksvoorwaarden</a>
+      <a class="p-2" href="/Help">Help</a>
+      <a class="p-2" href="/Instellingen">Instellingen</a>
+    </div>
+
+    <div class="text-center">
+      <a href="/rohnlicence">EducationROHN &copy;2018</a>
+    </div>
+    <div class="text-center">
+      <a href="#" class="p-2">Nederlands (België)</a>
+      <a href="#" class="p-2">English (US)</a>
+      <a href="#" class="p-2">Français (France)</a>
+    </div>
+
+  </div>
   </footer>
 
         <script src="{{asset('js/app.js')}}" ></script>
+
     </body>
 </html>
