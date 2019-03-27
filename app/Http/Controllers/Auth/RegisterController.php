@@ -69,6 +69,10 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function showRegistrationForm(){
+      return view('pages.register');
+    }
+
     public function index(){
 
         return 'under_constraction';
